@@ -34,8 +34,8 @@ function calcSavings() {
     $('.check:checked').each(function () {
         // totalHours += parseInt($('.check:checked').attr("data-hours"));
         totalCost += parseInt($(this).attr("data-cost"));
-        console.log($(this));
-        totalBenefit += parseInt($('.check:checked').attr("data-benefit"));
+        // console.log($(this));
+        totalBenefit += parseInt($(this).attr("data-benefit"));
     })
     // $('#totalHours').html(` ${totalHours * options}`)
     $('#totalOne').html(`$ ${totalCost * options}`)
